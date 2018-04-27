@@ -151,7 +151,7 @@
 					</div>
 					<div class="modal-body">
 						<h2 id="matchName"></h2>
-						<h2 id="matchImg"></h2>
+						<img id="matchImg" src="">
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -224,6 +224,9 @@
 					
 					$.post("/api/friends", userData).then(function(res){
 						console.log(res);
+						$('#matchName').text(res.name);
+						$('#matchImg').attr("src", res.photo);
+						$('#resultsModal').modal('show');
 					})
 				
 				} else {
