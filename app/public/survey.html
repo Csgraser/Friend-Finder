@@ -166,7 +166,7 @@
 		src="http://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.5/chosen.jquery.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.5/chosen.jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script type="text/javascript">
@@ -220,22 +220,11 @@
 					
 					console.log(userData);
 
-					// Grab the URL of the website
-					var currentURL = window.location.origin;
-
-					 function friendData(data) {
-						
-						// Grab the result from the AJAX post so that the best match's name and photo are displayed.
-						$("#matchName").text(data.name);
-						$('#matchImg').attr("src", data.photo);
-						// Show the modal with the best match 
-						$("#resultsModal").modal('toggle');
-
-					};
-
 					// AJAX post the data to the friends API. 
 					
-					$.post(currentURL + "/api/friends", friendData(userData))
+					$.post("/api/friends", userData).then(function(res){
+						console.log(res);
+					})
 				
 				} else {
 					alert("Please fill out all fields before submitting!");
