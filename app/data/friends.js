@@ -5,7 +5,7 @@
 var friends = [
 		{
 			"name": "Sephiroth",
-			"photo": "../../assets/images/sephiroth.jpg",
+			"photo": "/sephiroth.jpg",
 			"scores": [
 				// 21
 				5,
@@ -18,7 +18,7 @@ var friends = [
 		},
 		{
 			"name": "The Joker",
-			"photo": "../../assets/images/joker.jpg",
+			"photo": "/joker.jpg",
 			"scores": [
 				// 22
 				2,
@@ -31,7 +31,7 @@ var friends = [
 		},
 		{
 			"name": "Carnage",
-			"photo": "../../assets/images/carnage.jpeg",
+			"photo": "/carnage.jpeg",
 			"scores": [
 				// 13
 				1,
@@ -44,7 +44,7 @@ var friends = [
 		},
 		{
 			"name": "Loki",
-			"photo": "../../assets/images/Loki.jpg",
+			"photo": "/Loki.jpg",
 			"scores": [
 				// 19
 				2,
@@ -57,7 +57,7 @@ var friends = [
 		},
 		{
 			"name": "Handsome Jack",
-			"photo": "../../assets/images/Handsome_jack.jpg",
+			"photo": "/Handsome_jack.jpg",
 			"scores": [
 				// 18
 				1,
@@ -70,7 +70,7 @@ var friends = [
 		},
 		{
 			"name": "Ganondorf",
-			"photo": "../../assets/images/ganon.jpg",
+			"photo": "/ganon.jpg",
 			"scores": [
 				// 17
 				1,
@@ -83,7 +83,7 @@ var friends = [
 		},
 		{
 			"name": "Diablo",
-			"photo": "../../assets/images/diablo.jpg",
+			"photo": "/diablo.jpg",
 			"scores": [
 				// 11
 				1,
