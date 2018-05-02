@@ -85,8 +85,8 @@ var friends = [
 			"name": "Diablo",
 			"photo": "/diablo.jpg",
 			"scores": [
-				// 11
-				1,
+				// 12
+				2,
 				1,
 				5,
 				1,
